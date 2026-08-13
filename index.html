@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Bhutan Heritage Museum - Explore Bhutanese history, culture, art and royal heritage."
+    >
+
+    <title>Bhutan Heritage Museum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">🐉</span>
+
+                <span class="logo-text">
+                    <strong>Bhutan</strong>
+                    <small>MUSEUM</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+            <nav id="navMenu">
+
+                <a href="#home">Home</a>
+
+                <a href="#collections">Collections</a>
+
+                <a href="#history">History</a>
+
+                <a href="#visit">Visit</a>
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode"
+                >
+                    🌙
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             HERO SECTION
+        =============================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        WELCOME TO THE DRAGON KINGDOM
+                    </span>
+
+                    <h1>
+                        Discover the Soul
+                        <br>
+                        of Bhutan
+                    </h1>
+
+                    <p>
+                        Explore centuries of Bhutanese history,
+                        traditional art, royal heritage and living
+                        culture in one interactive museum experience.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#collections"
+                            class="btn primary explore-btn"
+                        >
+                            Explore Collections
+                        </a>
+
+                        <a
+                            href="#visit"
+                            class="btn secondary"
+                        >
+                            Plan Your Visit
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-art">
+
+                    <div class="dragon-card">
+
+                        <div class="dragon-symbol">
+                            🐉
+                        </div>
+
+                        <div class="dzongkha">
+                            འབྲུག་ཡུལ
+                        </div>
+
+                        <h3>
+                            Land of the Thunder Dragon
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             INTRODUCTION
+        =============================== -->
+
+        <section class="intro section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    OUR COLLECTION
+                </span>
+
+                <h2>
+                    Stories preserved
+                    for generations
+                </h2>
+
+                <p>
+                    Discover objects, traditions and stories
+                    that represent the unique cultural identity
+                    of Bhutan.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             COLLECTIONS
+        =============================== -->
+
+        <section
+            class="collections section"
+            id="collections"
+        >
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+                    EXPLORE THE MUSEUM
+                </span>
+
+                <h2>
+                    Museum Collections
+                </h2>
+
+                <p>
+                    Explore Bhutan through its art, culture,
+                    history and royal heritage.
+                </p>
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-filter="all"
+                >
+                    All Collections
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="art"
+                >
+                    Art
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="culture"
+                >
+                    Culture
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="history"
+                >
+                    History
+                </button>
+
+                <button
+                    class="filter"
+                    data-filter="royal"
+                >
+                    Royal Heritage
+                </button>
+
+            </div>
+
+
+            <!-- COLLECTION CARDS -->
+
+            <div class="collection-grid">
+
+
+                <!-- ART -->
+
+                <article
+                    class="collection-card"
+                    data-category="art"
+                >
+
+                    <div class="card-image art-image">
+                        🎨
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            ART
+                        </span>
+
+                        <h3>
+                            Traditional Bhutanese Art
+                        </h3>
+
+                        <p>
+                            Explore thangka paintings,
+                            sculptures and traditional
+                            artistic techniques.
+                        </p>
+
+                        <button
+                            class="learn-btn"
+                            data-title="Traditional Bhutanese Art"
+                            data-info="Bhutanese traditional art includes thangka paintings, sculptures, wood carving and other forms of sacred and decorative art."
+                        >
+                            Learn More →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CULTURE -->
+
+                <article
+                    class="collection-card"
+                    data-category="culture"
+                >
+
+                    <div class="card-image culture-image">
+                        🥁
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            CULTURE
+                        </span>
+
+                        <h3>
+                            Festivals & Traditions
+                        </h3>
+
+                        <p>
+                            Discover Bhutan's colourful festivals,
+                            dances, music and community traditions.
+                        </p>
+
+                        <button
+                            class="learn-btn"
+                            data-title="Festivals & Traditions"
+                            data-info="Bhutanese festivals bring communities together through masked dances, music, prayers and traditional celebrations."
+                        >
+                            Learn More →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- HISTORY -->
+
+                <article
+                    class="collection-card"
+                    data-category="history"
+                >
+
+                    <div class="card-image history-image">
+                        🏯
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            HISTORY
+                        </span>
+
+                        <h3>
+                            Bhutan Through Time
+                        </h3>
+
+                        <p>
+                            Journey through important moments
+                            that shaped the Kingdom of Bhutan.
+                        </p>
+
+                        <button
+                            class="learn-btn"
+                            data-title="Bhutan Through Time"
+                            data-info="Explore important periods in Bhutanese history, from the unification of the country to the development of modern Bhutan."
+                        >
+                            Learn More →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ROYAL -->
+
+                <article
+                    class="collection-card"
+                    data-category="royal"
+                >
+
+                    <div class="card-image royal-image">
+                        👑
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            ROYAL HERITAGE
+                        </span>
+
+                        <h3>
+                            The Wangchuck Dynasty
+                        </h3>
+
+                        <p>
+                            Learn about Bhutan's monarchy
+                            and royal heritage.
+                        </p>
+
+                        <button
+                            class="learn-btn"
+                            data-title="The Wangchuck Dynasty"
+                            data-info="The Wangchuck dynasty has played a central role in Bhutan's modern history and development."
+                        >
+                            Learn More →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TEXTILES -->
+
+                <article
+                    class="collection-card"
+                    data-category="culture"
+                >
+
+                    <div class="card-image textile-image">
+                        🧵
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            CULTURE
+                        </span>
+
+                        <h3>
+                            Textiles & Dress
+                        </h3>
+
+                        <p>
+                            Discover Bhutan's colourful textiles,
+                            weaving traditions and national dress.
+                        </p>
+
+                        <button
+                            class="learn-btn"
+                            data-title="Textiles & Dress"
+                            data-info="Bhutan is known for its intricate textile traditions and distinctive national dress, including the gho and kira."
+                        >
+                            Learn More →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ARCHITECTURE -->
+
+                <article
+                    class="collection-card"
+                    data-category="history"
+                >
+
+                    <div class="card-image heritage-image">
+                        🛕
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            HERITAGE
+                        </span>
+
+                        <h3>
+                            Dzongs & Architecture
+                        </h3>
+
+                        <p>
+                            Explore Bhutan's distinctive dzongs,
+                            monasteries and traditional architecture.
+                        </p>
+
+                        <button
+                            class="learn-btn"
+                            data-title="Dzongs & Architecture"
+                            data-info="Dzongs are important examples of Bhutanese architecture, combining religious, administrative and cultural functions."
+                        >
+                            Learn More →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             HISTORY
+        =============================== -->
+
+        <section
+            class="timeline-section section"
+            id="history"
+        >
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+                    TIMELINE
+                </span>
+
+                <h2>
+                    A Journey Through History
+                </h2>
+
+                <p>
+                    Key moments in Bhutan's fascinating
+                    historical journey.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        1616
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Zhabdrung Ngawang Namgyal
+                        </h3>
+
+                        <p>
+                            Zhabdrung Ngawang Namgyal arrived in
+                            Bhutan and played a major role in
+                            unifying the country.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        1907
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            The First King
+                        </h3>
+
+                        <p>
+                            Gongsar Ugyen Wangchuck became the
+                            first hereditary King of Bhutan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        1972
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Gross National Happiness
+                        </h3>
+
+                        <p>
+                            The philosophy of Gross National
+                            Happiness became an important
+                            development principle.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-year">
+                        2008
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Constitutional Democracy
+                        </h3>
+
+                        <p>
+                            Bhutan transitioned into a democratic
+                            constitutional monarchy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             VISITOR PLANNER
+        =============================== -->
+
+        <section
+            class="visit section"
+            id="visit"
+        >
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+                    PLAN YOUR VISIT
+                </span>
+
+                <h2>
+                    Create Your Museum Route
+                </h2>
+
+                <p>
+                    Tell us what you are interested in and
+                    create a personalized museum route.
+                </p>
+
+            </div>
+
+
+            <div class="planner">
+
+                <form id="visitForm">
+
+                    <div class="form-group">
+
+                        <label for="visitors">
+                            Number of Visitors
+                        </label>
+
+                        <input
+                            type="number"
+                            id="visitors"
+                            min="1"
+                            value="2"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="visitType">
+                            Tour Type
+                        </label>
+
+                        <select id="visitType">
+
+                            <option value="general">
+                                General Tour
+                            </option>
+
+                            <option value="family">
+                                Family Tour
+                            </option>
+
+                            <option value="student">
+                                Student Tour
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="interest">
+                            Main Interest
+                        </label>
+
+                        <select id="interest">
+
+                            <option value="all">
+                                All Collections
+                            </option>
+
+                            <option value="art">
+                                Art & Paintings
+                            </option>
+
+                            <option value="history">
+                                History
+                            </option>
+
+                            <option value="culture">
+                                Culture & Festivals
+                            </option>
+
+                            <option value="royal">
+                                Royal Heritage
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary full-btn"
+                    >
+                        Create My Route
+                    </button>
+
+                </form>
+
+
+                <div
+                    class="plan-result"
+                    id="planResult"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CALL TO ACTION
+        =============================== -->
+
+        <section class="cta">
+
+            <div class="cta-content">
+
+                <span class="section-label">
+                    EXPERIENCE BHUTAN
+                </span>
+
+                <h2>
+                    Every artifact
+                    tells a story.
+                </h2>
+
+                <p>
+                    Step into Bhutan's heritage and discover
+                    the stories that continue to shape
+                    the Kingdom today.
+                </p>
+
+                <a
+                    href="#collections"
+                    class="btn light-btn"
+                >
+                    Explore the Museum
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         MODAL
+    =============================== -->
+
+    <div
+        class="modal"
+        id="modal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+            >
+                ×
+            </button>
+
+            <span class="section-label">
+                MUSEUM COLLECTION
+            </span>
+
+            <h2 id="modalTitle">
+                Collection
+            </h2>
+
+            <p id="modalInfo">
+                Information about the collection.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <span class="logo-icon">
+                        🐉
+                    </span>
+
+                    <span class="logo-text">
+
+                        <strong>
+                            Bhutan
+                        </strong>
+
+                        <small>
+                            MUSEUM
+                        </small>
+
+                    </span>
+
+                </div>
+
+                <p>
+                    Preserving Bhutan's heritage,
+                    culture and stories for future generations.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#collections">
+                    Collections
+                </a>
+
+                <a href="#history">
+                    History
+                </a>
+
+                <a href="#visit">
+                    Visit
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span>
+                Bhutan Heritage Museum.
+                Educational project.
+            </p>
+
+            <button
+                id="topBtn"
+                class="top-btn"
+            >
+                ↑
+            </button>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
