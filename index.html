@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Real-time weather information for cities across Bhutan">
+
+    <title>Bhutan Real-Time Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="app">
+
+
+        <!-- ==============================
+             HEADER
+        =============================== -->
+
+        <header class="header">
+
+            <div class="flag">
+                🇧🇹git add .
+                
+            </div>
+
+            <h1>
+                Bhutan Weather
+            </h1>
+
+            <p>
+                Real-Time Weather Information
+            </p>
+
+        </header>
+
+
+        <!-- ==============================
+             SEARCH SECTION
+        =============================== -->
+
+        <section class="search-section">
+
+            <select id="citySelect">
+
+                <option value="thimphu">
+                    Thimphu
+                </option>
+
+                <option value="paro">
+                    Paro
+                </option>
+
+                <option value="punakha">
+                    Punakha
+                </option>
+
+                <option value="trongsa">
+                    Trongsa
+                </option>
+
+                <option value="phuentsholing">
+                    Phuentsholing
+                </option>
+
+                <option value="gelephu">
+                    Gelephu
+                </option>
+
+                <option value="samdrup_jongkhar">
+                    Samdrup Jongkhar
+                </option>
+
+                <option value="wangdue">
+                    Wangdue Phodrang
+                </option>
+
+            </select>
+
+
+            <button id="searchButton">
+                Check Weather
+            </button>
+
+        </section>
+
+
+        <!-- ==============================
+             LOADING
+        =============================== -->
+
+        <div id="loading" class="loading">
+
+            Loading weather...
+
+        </div>
+
+
+        <!-- ==============================
+             ERROR
+        =============================== -->
+
+        <div id="error" class="error"></div>
+
+
+        <!-- ==============================
+             WEATHER CARD
+        =============================== -->
+
+        <main id="weatherCard"
+              class="weather-card">
+
+
+            <!-- Location -->
+
+            <div class="location">
+
+                <h2 id="cityName">
+                    Thimphu
+                </h2>
+
+                <p>
+                    🇧🇹 Bhutan
+                </p>
+
+            </div>
+
+
+            <!-- Weather Icon -->
+
+            <div id="weatherIcon"
+                 class="weather-icon">
+
+                🌤️
+
+            </div>
+
+
+            <!-- Temperature -->
+
+            <div class="temperature">
+
+                <span id="temperature">
+                    --
+                </span>
+
+                <span>
+                    °C
+                </span>
+
+            </div>
+
+
+            <!-- Description -->
+
+            <p id="description"
+               class="description">
+
+                Loading...
+
+            </p>
+
+
+            <!-- ==============================
+                 WEATHER DETAILS
+            =============================== -->
+
+            <div class="details">
+
+
+                <!-- Humidity -->
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+                        💧
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Humidity
+                        </p>
+
+                        <strong id="humidity">
+                            --%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Wind -->
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+                        💨
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Wind Speed
+                        </p>
+
+                        <strong id="wind">
+                            -- km/h
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feels Like -->
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+                        🌡️
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Feels Like
+                        </p>
+
+                        <strong id="feelsLike">
+                            --°C
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Cloudiness -->
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+                        ☁️
+                    </div>
+
+                    <div>
+
+                        <p>
+                            Cloudiness
+                        </p>
+
+                        <strong id="clouds">
+                            --%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==============================
+                 REFRESH BUTTON
+            =============================== -->
+
+            <button id="refreshButton"
+                    class="refresh-button">
+
+                🔄 Refresh Weather
+
+            </button>
+
+
+            <!-- Updated Time -->
+
+            <p class="updated">
+
+                Last updated:
+
+                <span id="updated">
+                    --
+                </span>
+
+            </p>
+
+
+        </main>
+
+
+        <!-- ==============================
+             FOOTER
+        =============================== -->
+
+        <footer>
+
+            <p>
+                🇧🇹 Bhutan Real-Time Weather Application
+            </p>
+
+            <p>
+                Weather data provided by Open-Meteo
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
